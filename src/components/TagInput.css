@@ -1,0 +1,46 @@
+.tag-input {
+  margin: 20px 0;
+}
+
+.input-group {
+  display: flex;
+}
+
+.input-group .form-control {
+  flex: 1;
+}
+
+.input-group-append .btn {
+  margin-left: 10px;
+}
+
+.tag-container {
+  margin-top: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+.badge {
+  padding: 10px;
+  margin: 5px;
+  position: relative;
+}
+
+
+.close {
+  width: 100%;
+  outline: none;
+  background: red;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.close:hover {
+  border: white;
+  outline: none;
+}

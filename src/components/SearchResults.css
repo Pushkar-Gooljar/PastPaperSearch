@@ -1,0 +1,39 @@
+.search-results {
+    margin-top: 20px;
+  }
+  
+  .list-group {
+    width: 100%;
+  }
+  
+  .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  a.clicked-link {
+    color: red !important;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .bdg {
+    padding: 10px;
+    margin: 5px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .tag-found {
+    color: #333;
+    font-weight: 600;
+  }
