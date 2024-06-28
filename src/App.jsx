@@ -19,9 +19,9 @@ const App = () => {
 
     const data = dataFiles[selectedFile];
     const matchingPapers = data.papers
-      .filter(paper => tags.some(tag => paper.contents.includes(tag)))
+      .filter(paper => tags.some(tag => paper.contents.toLowerCase().includes(tag.toLowerCase())))
       .map(paper => {
-        const foundTags = tags.filter(tag => paper.contents.includes(tag));
+        const foundTags = tags.filter(tag => paper.contents.toLowerCase().includes(tag.toLowerCase()));
         return { paperName: paper.paperName, foundTags };
       });
 
