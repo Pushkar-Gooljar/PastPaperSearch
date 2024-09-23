@@ -4,6 +4,7 @@ import SearchResults from './components/SearchResults';
 import compP1 from './data/compP1.json';
 import compP2 from './data/compP2.json';
 import dtP3 from './data/dtP3.json';
+import chemP2 from './data/chemP2.json';
 import './App.css';
 
 const App = () => {
@@ -12,7 +13,7 @@ const App = () => {
   const [selectedFile, setSelectedFile] = useState('compP1');
   const [clickedLinks, setClickedLinks] = useState({});
 
-  const dataFiles = { compP1, compP2, dtP3 };
+  const dataFiles = { compP1, compP2, dtP3, chemP2 };
 
   const handleSearch = () => {
     if (tags.length === 0) return;
@@ -45,6 +46,7 @@ const App = () => {
           <option value="compP1">Computer P1</option>
           <option value="compP2">Computer P2</option>
           <option value="dtP3">Design & Tech P3</option>
+          <option value="chemP2">Chemistry P2</option>
         </select>
       </div>
       <TagInput tags={tags} setTags={setTags} />
