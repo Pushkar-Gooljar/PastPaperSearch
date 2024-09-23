@@ -4,7 +4,15 @@ import SearchResults from './components/SearchResults';
 import compP1 from './data/compP1.json';
 import compP2 from './data/compP2.json';
 import dtP3 from './data/dtP3.json';
+import chemP1 from './data/chemP1.json';
 import chemP2 from './data/chemP2.json';
+import chemP4 from './data/chemP4.json';
+import phyP1 from './data/phyP1.json';
+import phyP2 from './data/phyP2.json';
+import phyP4 from './data/phyP4.json';
+import bioP1 from './data/bioP1.json';
+import bioP2 from './data/bioP2.json';
+import bioP4 from './data/bioP4.json';
 import './App.css';
 
 const App = () => {
@@ -13,7 +21,7 @@ const App = () => {
   const [selectedFile, setSelectedFile] = useState('compP1');
   const [clickedLinks, setClickedLinks] = useState({});
 
-  const dataFiles = { compP1, compP2, dtP3, chemP2 };
+  const dataFiles = { compP1, compP2, dtP3, chemP1, chemP2, chemP4, phyP1, phyP2, phyP4, bioP1, bioP2, bioP4 };
 
   const handleSearch = () => {
     if (tags.length === 0) return;
@@ -45,8 +53,20 @@ const App = () => {
         <select id="dataFileSelect" className="form-control" onChange={handleFileChange} value={selectedFile}>
           <option value="compP1">Computer P1</option>
           <option value="compP2">Computer P2</option>
+
           <option value="dtP3">Design & Tech P3</option>
+
+          <option value="phyP1">Physics P1</option>
+          <option value="phyP2">Physics P2</option>
+          <option value="phyP4">Physics P4</option>
+
+          <option value="chemP1">Chemistry P1</option>
           <option value="chemP2">Chemistry P2</option>
+          <option value="chemP4">Chemistry P4</option>
+
+          <option value="bioP1">Biology P1</option>
+          <option value="bioP2">Biology P2</option>
+          <option value="bioP4">Biology P4</option>
         </select>
       </div>
       <TagInput tags={tags} setTags={setTags} />
